@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Arta Astrofotografiei</title> 
+<link rel="stylesheet" href="Responsive_Style.css">
+<script src="main.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="Arta Astrofotografiei.html" class ="logo"><img src="Logo.png">AstroCafé</a>
+        <a href="#" class="button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="#"><i class="fa fa-caret-down" style="color:rgb(255, 255, 255);font-size: 1.5rem;"></i>Echipament</a>
+                    <ul>
+                        <li><a href="Telescoape.html">Telescoape</a></li>
+                        <li><a href="Camere.html">Camere</a></li>
+                        <li><a href="Trepiede.html">Trepiede</a></li>
+                    </ul>
+                </li>
+                <li><a href="Editare.html">Editare</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="title"><h6>Procesul de editare</h6></div>
+    <div class="EditPage">
+        <a href="#" class="toggle-button">Instructiuni pas cu pas</a>
+        <div class="StepByStep">
+            <p>Odata ce au fost facute poze pe tot parcursul noptii, incepe procesul de editare. Acesta de asemenea este unul complex, insa odata efectuat, pozele vor prinde cu adevarat viata si culoare.</p>
+            <img src="E1.png" alt="R1">
+            <p>Totul incepe prin alinierea si suprapunerea tuturor pozelor pentru a reduce zgomotul si a scoate in evidenta detaliile obiectului fotografiat.</p>
+            <img src="E2.png" alt="R2">
+            <p>Odata suprapuse, se poate observa un preview al pozei, insa acesta este departe de rezultatul final. Urmatorul pas este cresterea contrastului si aducerea in prim-plan a detaliilor.</p>
+            <img src="E3.png" alt="R3">
+            <p>Ultimul pas este combinarea pozelor facute pe mai multe lungimi de unda, aparand astfel si culoarea in poza.</p>
+            <img src="E4.png" alt="R4">
+        </div>
+        <a href="#" class="toggle-button">Stacking interactiv</a>
+        <div class="EditorContainer">
+            <img src="" alt="StackedPicture" id="slidePicture">
+            <div class="SlideContainer">
+                <div class="Slider">
+                    <input type="range" min="1" max="50" value="1" id="myRange">
+                    <span class="cover"></span>
+                </div>
+                <input type="text" value ="0" id="myBox">
+            </div>
+            <div class="Channels">
+                <input type="checkbox" id="Channel">
+            </div>
+        </div>
+        <audio controls>
+            <source src="space.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
